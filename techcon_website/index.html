@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon 2024 - Homepage</title>
+    <style>
+        /* Basic styling for better readability and presentation */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50; /* Dark blue-gray */
+            color: #ecf0f1; /* Light gray */
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+        nav {
+            background: #34495e; /* Slightly lighter blue-gray */
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: #1abc9c; /* Turquoise */
+            color: #fff;
+        }
+        main {
+            padding: 20px;
+            max-width: 960px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2980b9; /* Peter River blue */
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        video {
+            width: 100%;
+            max-width: 700px; /* Limit video width for better presentation */
+            height: auto;
+            display: block; /* Remove extra space below video */
+            margin: 20px auto; /* Center the video */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50; /* Dark blue-gray */
+            color: #ecf0f1;
+            margin-top: 30px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+            border-top: 1px solid #34495e;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechCon 2024</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Welcome to TechCon 2024!</h2>
+            <p>Join us at TechCon 2024, the premier annual conference for technology enthusiasts, innovators, and professionals. Explore the latest advancements in AI, cybersecurity, cloud computing, and more. Connect with industry leaders, participate in hands-on workshops, and discover new opportunities in the ever-evolving tech landscape.</p>
+
+            <video controls aria-label="Promotional video for TechCon 2024">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                <track kind="captions" srclang="en" src="captions.vtt" label="English captions">
+                Your browser does not support the video tag. Please consider upgrading to a modern browser.
+            </video>
+            <p style="text-align: center; font-size: 0.9em; color: #666;">(Note: This is a placeholder video for demonstration purposes. In a real scenario, you would replace the 'src' with your actual promotional video URL and provide a 'captions.vtt' file for accessibility.)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>copyright &copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
