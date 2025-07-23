@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for TechCon 2024</title>
+    <style>
+        /* Basic styling for better readability and presentation */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50; /* Dark blue-gray */
+            color: #ecf0f1; /* Light gray */
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+        nav {
+            background: #34495e; /* Slightly lighter blue-gray */
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: #1abc9c; /* Turquoise */
+            color: #fff;
+        }
+        main {
+            padding: 20px;
+            max-width: 600px; /* Max width for form */
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2980b9; /* Peter River blue */
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between form elements */
+        }
+        form div {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .checkbox-container {
+            flex-direction: row; /* Checkbox and label on same line */
+            align-items: center;
+            justify-content: space-between; /* Space out checkbox/label and button */
+            flex-wrap: wrap; /* Allow wrapping */
+        }
+        .checkbox-container label {
+            margin-bottom: 0; /* Adjust margin for inline elements */
+            display: flex;
+            align-items: center;
+            flex-grow: 1; /* Allow label to take available space */
+        }
+        .checkbox-container button {
+            margin-left: 10px; /* Space between label and button */
+            padding: 8px 15px;
+            font-size: 0.9em;
+            background-color: #007bff; /* Blue for the new button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            white-space: nowrap; /* Prevent button text from wrapping */
+        }
+        .checkbox-container button:hover {
+            background-color: #0056b3; /* Darker blue */
+        }
+        .summary-output {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            font-size: 0.9em;
+            color: #666;
+            min-height: 30px; /* Give it some height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        button[type="submit"] {
+            background-color: #1abc9c; /* Turquoise */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-end; /* Align button to the right */
+            margin-top: 20px;
+        }
+        button[type="submit"]:hover {
+            background-color: #16a085; /* Darker turquoise */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50; /* Dark blue-gray */
+            color: #ecf0f1;
+            margin-top: 30px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+            border-top: 1px solid #34495e;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Register for TechCon 2024</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Registration Form</h2>
+        <form action="#" method="post"> <!-- action="#" for demonstration, replace with actual endpoint -->
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#" target="_blank" style="color: #007bff; text-decoration: none;">Terms and Conditions</a></label>
+                <button type="button" id="summarizeTermsButton">✨ Summarize Terms</button>
+            </div>
+            <div id="termsSummaryOutput" class="summary-output">
+                <!-- Summary will be displayed here -->
+            </div>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>copyright &copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const summarizeButton = document.getElementById('summarizeTermsButton');
+            const summaryOutput = document.getElementById('termsSummaryOutput');
+
+            // Placeholder for actual terms and conditions text
+            // In a real application, this would be fetched from a backend or a dedicated file.
+            const termsAndConditionsText = `
+                By registering for TechCon 2024, you agree to our privacy policy, which outlines how your data will be collected, used, and protected. 
+                You also agree to abide by the conference's code of conduct, ensuring a respectful and inclusive environment for all attendees. 
+                Your registration is non-refundable after 7 days from purchase. 
+                We reserve the right to make changes to the schedule or speakers if necessary. 
+                All personal information provided will be used solely for conference-related purposes and will not be shared with third parties without your explicit consent. 
+                Attendees are responsible for their own travel and accommodation arrangements. 
+                Any disruptive behavior may result in expulsion from the conference without refund.
+            `;
+
+            summarizeButton.addEventListener('click', async () => {
+                summaryOutput.innerHTML = 'Loading summary...'; // Show loading indicator
+
+                try {
+                    let chatHistory = [];
+                    const prompt = `Summarize the following terms and conditions in a concise and easy-to-understand paragraph: ${termsAndConditionsText}`;
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                    const payload = { contents: chatHistory };
+                    const apiKey = ""; // Canvas will provide this API key at runtime
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        summaryOutput.innerHTML = text; // Display the summary
+                    } else {
+                        summaryOutput.innerHTML = 'Failed to generate summary. Please try again.';
+                        console.error('Unexpected API response structure:', result);
+                    }
+                } catch (error) {
+                    console.error('Error fetching summary:', error);
+                    summaryOutput.innerHTML = 'An error occurred while fetching the summary.';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
