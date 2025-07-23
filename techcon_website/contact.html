@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    <style>
+        /* Basic styling for better readability and presentation */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50; /* Dark blue-gray */
+            color: #ecf0f1; /* Light gray */
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+        nav {
+            background: #34495e; /* Slightly lighter blue-gray */
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: #1abc9c; /* Turquoise */
+            color: #fff;
+        }
+        main {
+            padding: 20px;
+            max-width: 960px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2980b9; /* Peter River blue */
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .social-links a {
+            display: inline-block;
+            color: #34495e;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .social-links a:hover {
+            background-color: #eee;
+            color: #2980b9;
+        }
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #f0f0f0;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        form div {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        textarea {
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 100px;
+        }
+        button[type="submit"] {
+            background-color: #1abc9c; /* Turquoise */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-start; /* Align button to the left */
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background-color: #16a085; /* Darker turquoise */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50; /* Dark blue-gray */
+            color: #ecf0f1;
+            margin-top: 30px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+            border-top: 1px solid #34495e;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions about TechCon 2024, please feel free to reach out to us through the following channels:</p>
+
+            <h3>Email Address:</h3>
+            <p><a href="mailto:email@example.com">email@example.com</a></p>
+
+            <h3>Social Media:</h3>
+            <div class="social-links">
+                <a href="https://twitter.com/TechConOfficial" target="_blank" aria-label="Follow us on Twitter">Twitter</a>
+                <a href="https://linkedin.com/company/TechConOfficial" target="_blank" aria-label="Connect with us on LinkedIn">LinkedIn</a>
+                <a href="https://facebook.com/TechConOfficial" target="_blank" aria-label="Like our Facebook page">Facebook</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Our Location</h2>
+            <p>TechCon 2024 will be held at a premier convention center. Find us on the map below:</p>
+            <div class="map-container">
+                <!-- Replace the src with your actual Google Maps embed URL -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.95507469796!2d-73.9856643845949!3d40.74844037932808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259838a4c8483%3A0xb89d1fe6bc499443!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1678888888888!5m2!1sen!2sus"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Google Maps location of TechCon 2024 venue (Empire State Building as example)"
+                ></iframe>
+            </div>
+            <p style="text-align: center; font-size: 0.9em; color: #666; margin-top: 10px;">(Note: The map above shows the Empire State Building as a placeholder. You should replace the 'src' attribute with the actual embed URL for your conference venue.)</p>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post"> <!-- action="#" for demonstration, replace with actual endpoint -->
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>copyright &copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
